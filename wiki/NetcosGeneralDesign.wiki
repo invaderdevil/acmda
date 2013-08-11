@@ -42,6 +42,8 @@ This would show information of the node.
 
 3, ncs-node list
 This would list the nodes of the cluster.
+
+4, ncs-node send --from-node node1:pathname --to-node node2:pathname --time xs --priority n
 }}}
 
 ----
