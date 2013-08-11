@@ -36,4 +36,13 @@ This would destroy the cluster.
 {{{
 1, ncs-node add/remove node.harrycluster.com
 This would add/remove a node in this cluster.
+
+2, ncs-node info node.harrycluster.com
+This would show information of the node.
+
+3, ncs-node list
+This would list the nodes of the cluster.
 }}}
+
+----
+Written by Weiwei Jia <harryxiyou@gmail.com>
