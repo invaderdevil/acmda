@@ -9,6 +9,8 @@ The network has turned very complex. Some applications need reliability and high
 ===General design===
 There would be a cluster in this network (Now, it is in a LAN). When you initialize the cluster on one node, this node would be the master one. The master node in this network would be the core one, which could add/remove/... nodes to this cluster. Basically, the nodes in this cluster would send packages from one to another. The time and other parameters should be controlled during this procedure.
 
+http://acmda.googlecode.com/svn/wiki/images/netcos.jpg
+
 
 ===Features===
  * Control the network in this cluster
