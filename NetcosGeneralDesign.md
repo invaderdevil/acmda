@@ -1,0 +1,50 @@
+# Network Controller System #
+
+### Background Introduction ###
+The network has turned very complex. Some applications need reliability and high-speed (At least measurable, that is to say, the time can be set into a scope) network. Like the video controller system, it needs a network controller to manage and monitor the whole network jobs.
+
+
+### General design ###
+There would be a cluster in this network (Now, it is in a LAN). When you initialize the cluster on one node, this node would be the master one. The master node in this network would be the core one, which could add/remove/... nodes to this cluster. Basically, the nodes in this cluster would send packages from one to another. The time and other parameters should be controlled during this procedure.
+
+![http://acmda.googlecode.com/svn/wiki/images/netcos.jpg](http://acmda.googlecode.com/svn/wiki/images/netcos.jpg)
+
+
+### Features ###
+  * Control the network in this cluster
+  * Send packages with time limitation (Analyse and Study real time network)
+
+### Detail desgin ###
+  * cluster level
+```
+1, ncs-cluster init clutser.harrycluster.com
+This would init the cluster and the command runs on the master node.
+
+2, ncs-cluster info
+This would get the cluster information.
+
+3, ncs-cluster getmaster
+This would show the master node of this cluster.
+
+4, ncs-cluster destroy
+This would destroy the cluster.
+```
+
+  * node level
+```
+1, ncs-node add/remove node.harrycluster.com
+This would add/remove a node in this cluster.
+
+2, ncs-node info node.harrycluster.com
+This would show information of the node.
+
+3, ncs-node list
+This would list the nodes of the cluster.
+
+4, ncs-node send --from-node node1:pathname --to-node node2:pathname --time xs --priority n
+```
+
+
+---
+
+Written by Weiwei Jia <harryxiyou@gmail.com>
